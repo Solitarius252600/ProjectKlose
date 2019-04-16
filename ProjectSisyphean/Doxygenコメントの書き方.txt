@@ -1,0 +1,64 @@
+ファイル名へのコメント
+/**
+* @file ファイル名.h
+* @brief 簡単な説明
+* @author 作成者
+* @date 作成日
+* @details 詳細な説明
+*/
+
+関数へのコメント
+/**
+* @fn void function(int a, int b)
+* @brief 簡単な説明（～する関数）
+* @param[in] a(引数名) 引数の説明
+* @param[out] b(引数名) 引数の説明
+* @return bool 戻り値の説明
+* @details 詳細な説明
+*/
+
+クラスへのコメント
+/**
+* @brief 簡単なクラスの説明
+* @details 詳細なクラスの説明
+*/
+class Cclass{
+
+public:
+    /**
+    * @brief コンストラクタの簡単な説明
+    */
+    Cclass(){}
+    /**
+    * @brief デストラクタの簡単な説明
+    */
+    ~Cclass(){}
+
+    /**
+    * @fn void sum()
+    * @brief 簡単な関数
+    * @details 詳細な説明（クラス内の関数も普通の関数と同じように書く）
+    */
+    void sum();
+};
+
+マクロへのコメント
+/**
+* @def _TEST
+* @brief 簡単な説明
+* @details 詳細な説明
+*/
+#define _TEST 0
+
+名前空間へのコメント
+/**
+* @namespace Namae
+* @brief 簡単な説明
+* @details 詳細な説明
+*/
+namespace Namae{
+}
+
+変数へのコメント
+//! ほにゃららで使う変数
+int a;
