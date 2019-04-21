@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShowTriangle", "ShowTriangle.vcxproj", "{31D94513-D9A7-45CF-9A50-F39C1DDF4E02}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XInput", "..\XInput\XInput.vcxproj", "{1D654C35-A4CC-4A69-94D0-053DC21896DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,19 @@ Global
 		{31D94513-D9A7-45CF-9A50-F39C1DDF4E02}.Release|x64.Build.0 = Release|x64
 		{31D94513-D9A7-45CF-9A50-F39C1DDF4E02}.Release|x86.ActiveCfg = Release|Win32
 		{31D94513-D9A7-45CF-9A50-F39C1DDF4E02}.Release|x86.Build.0 = Release|Win32
+		{1D654C35-A4CC-4A69-94D0-053DC21896DC}.Debug|x64.ActiveCfg = Debug|x64
+		{1D654C35-A4CC-4A69-94D0-053DC21896DC}.Debug|x64.Build.0 = Debug|x64
+		{1D654C35-A4CC-4A69-94D0-053DC21896DC}.Debug|x86.ActiveCfg = Debug|Win32
+		{1D654C35-A4CC-4A69-94D0-053DC21896DC}.Debug|x86.Build.0 = Debug|Win32
+		{1D654C35-A4CC-4A69-94D0-053DC21896DC}.Release|x64.ActiveCfg = Release|x64
+		{1D654C35-A4CC-4A69-94D0-053DC21896DC}.Release|x64.Build.0 = Release|x64
+		{1D654C35-A4CC-4A69-94D0-053DC21896DC}.Release|x86.ActiveCfg = Release|Win32
+		{1D654C35-A4CC-4A69-94D0-053DC21896DC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CA1CB2D-10F9-4E83-8349-2BF15498D750}
 	EndGlobalSection
 EndGlobal

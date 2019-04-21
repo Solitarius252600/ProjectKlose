@@ -6,6 +6,7 @@
 * @details
 */
 #include "D3D11App.h"
+#include <xinput.h>
 
 
 //
@@ -73,6 +74,20 @@ HRESULT D3D11App::CreateDevice()
 {
 	HRESULT hr = S_OK;
 
+	//-----------------------------------INPUT-----------------------------------------------
+	int controllerId = -1;
+
+	for (DWORD i = 0; i < XUSER_MAX_COUNT && controllerId == -1; i++)
+	{
+		XINPUT_STATE state;
+		ZeroMemory(&state, sizeof(XINPUT_STATE));
+
+		if (XInputGetState(i, &state) == ERROR_SUCCESS)
+			controllerId = i;
+	}
+
+	//---------------------------------------------------------------------------------------
+	
 	RECT rc;
 	GetClientRect(m_hWnd, &rc);
 	UINT width = rc.right - rc.left;
